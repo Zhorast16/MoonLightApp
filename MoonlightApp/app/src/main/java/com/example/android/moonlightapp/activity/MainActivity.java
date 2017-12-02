@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.android.moonlightapp.R;
-import com.example.android.moonlightapp.fragment.tab2Fragment;
 
 public class MainActivity extends AppCompatActivity {
     public Button bmenu;
