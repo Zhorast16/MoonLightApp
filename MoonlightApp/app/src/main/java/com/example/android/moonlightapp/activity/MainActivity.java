@@ -17,14 +17,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bmenu = (Button) findViewById(R.id.btnMenu);
-
-
         bmenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Order",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(MainActivity.this, OrderActivity.class);
+                Toast.makeText(getApplicationContext(), "Order", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, OrderActivity.class);
                 startActivity(intent);
             }
+        });
     }
 }

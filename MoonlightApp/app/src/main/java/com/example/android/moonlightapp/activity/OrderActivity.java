@@ -37,7 +37,8 @@ public class OrderActivity extends AppCompatActivity {
         gtea = findViewById(R.id.gtea);
         choco = findViewById(R.id.choco);
         moon = findViewById(R.id.moon);
-
+        Intent intent = new Intent(OrderActivity.this, SummaryActivity.class);
+        startActivity(intent);
     }
     @Override
     public boolean onOptionsItemSelected (MenuItem menuItem) {
@@ -64,6 +65,4 @@ public class OrderActivity extends AppCompatActivity {
             jml+=hargamoon*25000;
         return total = jml;
     }
-    Intent intent = new Intent(OrderActivity.this, SummaryActivity.class);
-    startActivity(intent);
 }

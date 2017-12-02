@@ -15,10 +15,8 @@ public class SummaryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_summary);
         onCreate(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(OrderActivity.this,SummaryActivity.class);
-                intent.putExtra("datasurvey",total.getText().toString());
-                intent.putExtra(ResultSurveyActivity.DATAKIRIM,1);
+            public void onClick(View view) {
+                Intent intent = getIntent(OrderActivity.this);
                 startActivity(intent);
             }
         });
