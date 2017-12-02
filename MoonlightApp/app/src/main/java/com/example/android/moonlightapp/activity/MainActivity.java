@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.android.moonlightapp.R;
 
@@ -21,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         bmenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), OrderActivity.class);
+                Toast.makeText(getApplicationContext(),"Order",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(MainActivity.this, OrderActivity.class);
                 startActivity(intent);
             }
-        });
     }
 }

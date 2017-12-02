@@ -64,5 +64,6 @@ public class OrderActivity extends AppCompatActivity {
             jml+=hargamoon*25000;
         return total = jml;
     }
-    orders.
+    Intent intent = new Intent(OrderActivity.this, SummaryActivity.class);
+    startActivity(intent);
 }
