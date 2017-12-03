@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Order", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, OrderActivity.class);
+                Intent intent = new Intent(getApplicationContext(), OrderActivity.class);
                 startActivity(intent);
             }
         });
